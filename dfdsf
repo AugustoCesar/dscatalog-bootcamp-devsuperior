@@ -1,0 +1,108 @@
+[33mcommit b72405a64cf3d5e81eb042e009524208cc5da455[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Thu May 20 23:17:30 2021 -0400
+
+    ClientDTO, ClientRepository and ClientService
+
+[33mcommit 522244c5b510e588e420dd1f3aabf37b71d73bd7[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Thu May 20 22:13:26 2021 -0400
+
+    Client entity and SQL script
+
+[33mcommit 9ad094084252a61ae976ca84b3d0ce9f70f9d889[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Wed May 19 17:53:42 2021 -0400
+
+    Product insert, update, delete
+
+[33mcommit 78a70cab2ca7c472f818425bf6119ec5da462e85[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Wed May 19 17:20:02 2021 -0400
+
+    Product repository, service, resource, GET ok
+
+[33mcommit d19f363c501e0aa75623aeac572ff4b3b4a6c08f[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 20:12:17 2021 -0400
+
+    Product entity, SQL script
+
+[33mcommit 54e86cd08a4648771dafbfb078d3427f2f44a19f[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 17:27:17 2021 -0400
+
+    Pagination
+
+[33mcommit d31db61dba7efd143789f113015656ea32a3828d[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 17:06:34 2021 -0400
+
+    Auditing data
+
+[33mcommit 343b09dd1ad2cad46ce95cffc89ca868c165180e[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 16:40:34 2021 -0400
+
+    Delete category
+
+[33mcommit 6ae019f025406cfc744fda705a68d46859285f30[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 16:14:45 2021 -0400
+
+    Update category
+
+[33mcommit 13592cf546f6bdd38a1829d6c30ba860ba331b8e[m
+Merge: c76b353 0b2e4e8
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 15:44:01 2021 -0400
+
+    Merge branch 'master' of https://github.com/AugustoCesar/dscatalog-bootcamp-devsuperior
+
+[33mcommit c76b35359c9539e0cb0659066019c02c5ec1f2ff[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 15:40:16 2021 -0400
+
+    POST new Category
+
+[33mcommit 0b2e4e8df58fff34873822626b99dd1f2bf8b47b[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 15:40:16 2021 -0400
+
+    Insert Category
+
+[33mcommit 6e9a9d862057f5662e42013c2a507e76d81e1976[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Mon May 17 13:03:10 2021 -0400
+
+    Find Category by id, exception handling
+
+[33mcommit 84d534258d0db2a5e2d095cc6ddcdc3799019801[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Sun May 16 21:42:17 2021 -0400
+
+    DTO
+
+[33mcommit 758d95289490ee356dfe6a01aa85d753fe1bfff4[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Sun May 16 13:17:48 2021 -0400
+
+    Database seeding
+
+[33mcommit a900fb81c1cd2f143997f852e9a219b460eb23cc[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Sat May 15 18:57:10 2021 -0400
+
+    H2 database
+
+[33mcommit 343e28c8052c99008d557c9d26b0d891f2e566ab[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Tue May 11 22:26:36 2021 -0400
+
+    CategoryResource
+
+[33mcommit 862cf9649486fafbc8bafbf0e527d17851cb0265[m
+Author: Augusto Cesar <augustocesar.udi@gmail.com>
+Date:   Tue May 11 16:49:29 2021 -0400
+
+    Project created
