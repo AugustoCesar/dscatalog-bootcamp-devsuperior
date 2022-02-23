@@ -3,7 +3,7 @@ import qs from 'qs';
 import history from './history';
 import jwtDecode from 'jwt-decode';
 
-type Role = 'ROLE_OPERATOR' | 'ROLE ADMIN';
+type Role = 'ROLE_OPERATOR' | 'ROLE_ADMIN';
 
 export type TokenData = {
   exp: number;
@@ -75,7 +75,7 @@ export const getAuthData = () => {
 
 export const removeAuthData = () => {
   localStorage.removeItem(tokenKey);
-}
+};
 
 // Add a request interceptor
 axios.interceptors.request.use(
@@ -114,7 +114,26 @@ export const getTokenData = (): TokenData | undefined => {
   }
 };
 
-export const isAuthenticated = () : boolean => {
+export const isAuthenticated = (): boolean => {
   const tokenData = getTokenData();
-  return (tokenData && tokenData.exp * 1000 > Date.now()) ? true : false;
-}
+  return tokenData && tokenData.exp * 1000 > Date.now() ? true : false;
+};
+
+export const hasAnyRoles = (roles: Role[]): boolean => {
+  if (roles.length === 0) {
+    return true;
+  }
+  const tokenData = getTokenData();
+
+  if (tokenData !== undefined) {
+    for (var i = 0; i < roles.length; i++) {
+      if (tokenData.authorities.includes(roles[i])) {
+        return true;
+      }
+    }
+
+    //return roles.some((role) => tokenData.authorities.includes(role));
+  }
+
+  return false;
+};
