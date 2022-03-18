@@ -18,7 +18,7 @@ const Form = () => {
     const data = {
       ...formData,
       imgUrl:
-        'https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/25-big.jpg',
+        'https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/5-big.jpg',
       categories: [{ id: 1, name: '' }],
     };
 
@@ -30,7 +30,7 @@ const Form = () => {
     };
 
     requestBackend(config).then((response) => {
-      console.log(response.data);
+      history.push('/admin/products');
     });
   };
 
