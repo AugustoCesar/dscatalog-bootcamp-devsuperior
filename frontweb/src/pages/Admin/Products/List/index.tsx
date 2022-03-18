@@ -24,7 +24,7 @@ const List = () => {
       },
       {
         id: 3,
-        name: 'Computadores',
+        name: 'Celulares',
       },
     ],
   };
