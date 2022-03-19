@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 import { useEffect, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { useHistory, useParams } from 'react-router-dom';
 import Select from 'react-select';
 import { Category } from 'types/category';
@@ -26,6 +26,7 @@ const Form = () => {
     handleSubmit,
     formState: { errors },
     setValue,
+    control,
   } = useForm<Product>();
 
   useEffect(() => {
@@ -101,15 +102,29 @@ const Form = () => {
               </div>
 
               <div className="margin-bottom-30">
-                <div className="mb-4">
-                  <Select
-                    options={selectCategories}
-                    classNamePrefix="product-crud-select"
-                    isMulti
-                    getOptionLabel={(category: Category) => category.name}
-                    getOptionValue={(category: Category) => String(category.id)}
-                  />
-                </div>
+                <Controller
+                  name="categories"
+                  rules={{ required: true }}
+                  control={control}
+                  render={({ field }) => (
+                    <Select
+                      {...field}
+                      options={selectCategories}
+                      classNamePrefix="product-crud-select"
+                      isMulti
+                      getOptionLabel={(category: Category) => category.name}
+                      getOptionValue={(category: Category) =>
+                        String(category.id)
+                      }
+                    />
+                  )}
+                />
+                {errors.categories && (
+                  <div className="invalid-feedback d-block">
+                    Campo obrigatório
+                  </div>
+                )}
+                <div className="mb-4"></div>
               </div>
 
               <div className="margin-bottom-30">
