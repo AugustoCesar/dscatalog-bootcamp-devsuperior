@@ -141,7 +141,7 @@ const Form = () => {
                 <div className="mb-4">
                   <Controller
                     name="price"
-                    rules={{ required: 'Campo Obrigatório' }}
+                    rules={{ required: 'Campo obrigatório' }}
                     control={control}
                     render={({ field }) => (
                       <CurrencyInput
